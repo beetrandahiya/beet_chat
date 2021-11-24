@@ -1,0 +1,199 @@
+.App {
+  text-align: center;
+  width: 50%;
+  left: 25%;
+  margin: 0 auto;
+  background: #fff;
+
+  height: 100%;
+  position: absolute;
+  overflow: auto;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+.msgtext {
+  width: fit-content;
+  margin: 0 0;
+  color: #111;
+  border-radius: 10px;
+  padding: 0px 10px;
+
+}
+
+.msgtext p {
+  word-wrap: break-word;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.messagesent {
+  margin: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  padding: none;
+
+
+}
+
+.messagerecieved {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: none;
+}
+
+.messagerecieved .messagewrap {
+  width: fit-content;
+  display: flex;
+  height: 32px;
+  padding: 2px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 12px
+}
+
+.messagerecieved .messagewrap .deletemsg {
+  display: none;
+}
+
+.messagewrap {
+  width: fit-content;
+  display: flex;
+
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border: #ccc solid 1px;
+
+}
+
+.deletemsg {
+  background-color: rgba(0,0,0,0.2);
+  margin: 2px 2px 3px 4px;
+  border-radius: 50%;
+  height: 28px;
+  border: none;
+  width: 28px;
+  font-size: 20px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.deletemsg:hover{
+  background-color: rgba(0,0,0,0.4);
+}
+
+.profilepicmsg {
+  background-color: #fff;
+  margin: 2px 2px 2px 4px;
+  border-radius: 50%;
+  height: 30px;
+  border: none;
+  width: 30px;
+
+}
+
+
+.sendform{
+  width: 90%;
+  display: grid;
+  grid-template-columns: 88% 12%;
+
+  bottom: 0;
+  padding: 2% 5%;
+
+
+
+}
+.sendform input{
+  padding: 5px;
+  padding: 10px 10px;
+  border-radius: 10px 0px 0px 10px;
+  border: #ddd solid 1px;
+  border-right: none;
+  transition: all 0.2s ease-in-out;
+}
+.sendform input:focus{
+  outline: none;
+  border: #ccc solid 1px;
+  border-right: none;
+}
+.sendform button{
+  background-color: #fff;
+  border: none;
+  color: #F619A2;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 0px 10px 10px 0px;
+  padding: 5px;
+  padding: 10px 10px;
+  border: #ddd solid 1px;
+  border-left: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.sendform button:hover{
+  background-color: #F619A2;
+  color: #fff;
+}
+
+.sendform button:disabled{
+  background-color: #fff;
+  color: #f619a18f;
+}
+
+.signinbtn{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+border-radius: 12px;
+border :rgba(0, 0, 0, 0.1) 1px solid;
+  margin:0.5em auto;
+  padding: 0.5em 0.8em;
+  background-color: #fff;
+  font-size: 32px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.signinbtn:hover{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 50px;
+  transition: 0.5s;
+}
+.signinbtn span{
+  font-weight: bold;
+}
+.Signinmain{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.signoutbtn{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+border-radius: 12px;
+border :rgba(0, 0, 0, 0.1) 1px solid;
+  margin:0.5em auto;
+  padding: 0.5em 0.8em;
+  background-color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* media query  for smartphones*/
+@media screen and (max-width: 600px) {
+  .App {
+    width: 100%;
+    left: 0;
+  }
+}
